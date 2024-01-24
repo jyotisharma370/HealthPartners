@@ -1,4 +1,5 @@
 ﻿using HealthPartners.FizzBuzz.Interface;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace HealthPartners.FizzBuzz
 {
@@ -7,7 +8,7 @@ namespace HealthPartners.FizzBuzz
     {
         public string ConvertNumber(int n)
         {
-            if (n % 15 == 0)
+            if ((n % 3 == 0) && (n % 5 == 0))
                 return "fizzbuzz";
 
             if (n % 3 == 0)
